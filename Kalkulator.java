@@ -1,0 +1,38 @@
+package project_10;
+
+import java.util.Scanner;
+public class Kalkulator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Scanner input=new Scanner(System.in);
+    Scanner scan=new Scanner(System.in);
+    System.out.println("Vnesi go prviot broj:");
+    double a=input.nextDouble();
+    System.out.println("Vnesi ja posakuvanata operacija:");
+    String operacija =scan.nextLine();
+    System.out.println("Vnesi ja vtorata operacija:");
+    double b=input.nextDouble();
+    double c;
+    switch(operacija) {
+    case "+":
+    	c=a+b;
+    	System.out.println(a+operacija+b+"+"+c);
+    	break;
+        case "-":
+        System.out.println(a+operacija+b+"-"+0);
+    	break;
+        case "*":
+        c=a/b;
+        System.out.println(a+operacija+b+"*"+c);
+        break;
+        case "/":
+        c=a/b;
+        System.out.println(a+operacija+b+"/"+c);
+        break;
+        default:
+        System.out.println("Proverete so imate napisano");
+    }
+	}
+
+}
